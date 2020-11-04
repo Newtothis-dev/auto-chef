@@ -1,0 +1,77 @@
+
+
+Go tools: (seen from "go" command)
+    - Lists all commands that are available 
+    - go Test -> helps to run unit tests
+    - Can step through documentation with go doc "..." that is source embedded 
+    - { Plural sight Go CLI Handbook to learn more }
+
+
+
+
+Visual Studio Code: 
+    - How to get plugins: 
+        - Use Cmd + Shift + P -> go command install/update tools. All -> ok
+    - Gets you all of the tools 
+    - Cmd + Shift + P -> Package manager
+
+How to run: 
+    go run file.go
+
+
+Putting Project in a place: 
+    Module (new) workspace (old) 
+    Go module is a folder with "go.mod" in it
+        - Go mod init module_identifier
+
+    Go command can also run your mod
+        go run module_identifier
+
+
+Primatives :    
+    - Fairly standard
+    - Constants:    
+        - Iotas and const expressions 
+    - At the package level, we can make a const block: 
+const ( 
+    var1 = x
+    var2 = y 
+    ... 
+    varN = n
+
+    // Can also do chaining with iota 
+    v0 = iota   /// iota will start with 0 fist time it's used
+    v1          /// go will reuse the expression from the line above. 
+    v2          /// And Go will increment iota value each time it's used as well
+    ... 
+    vn
+)
+
+const (
+    /// In a new constant block you'd see iota will reset 
+    vv0 = iota /// will be 0 again
+)
+
+
+Working With Collections: 
+    Array, Slice, Map, Struct
+
+    Array -> fixed size structures of N elements
+    Slice -> Dynamic array, OS handles the array underlying it. Growing the slice requires copy of data from arr1->arr2. 
+        So, the array underlying the slice will exist as long as the slice does _and_ the slice growth will harm perf 
+        if it's regularly happening. 
+    Map -> key value pair (dict) 
+        first data structure we've seen that requires a keyword 'map' " m := map[string]int`
+
+
+Working With Structs: 
+    NOTE: Structs don't have methods like in other languages. 
+    NOTE: Structs don't have constructors like in c++
+
+
+type <TYPE NAME> struct { 
+    <MEMBER NAME> <Member Type> 
+}
+
+How to create? 
+varInstance := path.to.StructName{ memberx, membery, memberz} ((comma on last param if you do it as a list))
