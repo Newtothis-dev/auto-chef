@@ -75,3 +75,36 @@ type <TYPE NAME> struct {
 
 How to create? 
 varInstance := path.to.StructName{ memberx, membery, memberz} ((comma on last param if you do it as a list))
+
+
+
+Functions and Methods: 
+/** 
+ * func FUNCTION_NAME (FUNCTION_PARAMETERS) RETURN_TYPE {/* FUNCTION BODY*/}
+ */
+
+
+ FUNCTION_PARAMETERS follow the order: 
+    <name> <type>, <name> <type>, ... /* unique names type */
+    <name>, <name>, <name> <type>, ... /* list of named variables all of type x */
+
+error types are generally used to determine what the problem is. 
+'error' is a type, huh. 
+
+import "errors" 
+errors.New("Something went wrong" ) 
+
+RETURN_TYPE can be a touple (int, error) 
+
+func foo(bar, int) (int, error) { 
+    if (bar > 0) { 
+        return bar, nil
+    }
+    return bar, errors.New("Something went wrong!")
+}
+
+
+_, err := foo(10) /* allows you to check the error if you don't care about the int return */
+x, _ := foo(0) /* if you don't care about err */
+x, err := foo(-10) /* can check both */
+
