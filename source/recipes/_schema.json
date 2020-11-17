@@ -1,0 +1,91 @@
+{ 
+    "Recipe_Group": [
+        { 
+            "id": "UID_X", 
+            "name": "some food" , 
+            "source": "mah brain", 
+            "comments": "random", 
+            "summary": { 
+                "preptime":0, 
+                "waittime":0, 
+                "cooktime":0, 
+                "servings":6
+            }, 
+            "instructions": [
+                {
+                    "action": "do thing", 
+                    "duration": 10,
+                    "dur units": "minutes"
+                }, 
+                {
+                    "action":"do thing"
+                }
+            ],
+            "ingredients": [
+                {
+                    "food": [
+                        {
+                            "name": "food name",
+                            "quantity":1,
+                            "units":"cup",
+                            "prep type": "sliced", 
+                            "health data" : { 
+                                "carbs":0,
+                                "sugars":0,
+                                "fiber":0,
+                                "fats":0, 
+                                "sat fats":0,
+                                "proteins":0,
+                                "calories":0
+                            }, 
+                            "qty per serving": 0
+                        },
+                        {
+                            "name": "Replacement food name",
+                            "quantity":1,
+                            "units":"cup",
+                            "prep type": "sliced",
+                            "health data" : { 
+                                "carbs":0,
+                                "sugars":0,
+                                "fiber":0,
+                                "fats":0, 
+                                "sat fats":0,
+                                "proteins":0,
+                                "calories":0
+                            }, 
+                            "qty per serving": 0
+                        }
+                    ]
+                },
+                {
+                    "food": [{
+                        "name": "fname", 
+                        "quantity":1,
+                        "units":"cup",
+                        "prep type": "sliced",
+                        "health data" : { 
+                            "carbs":0,
+                            "sugars":0,
+                            "fiber":0,
+                            "fats":0, 
+                            "sat fats":0,
+                            "proteins":0,
+                            "calories":0
+                        },
+                        "qty per serving":0
+                    }]
+                }
+            ],
+            "kitchenware": [ 
+                "instant pot", 
+                "cast iron"
+            ],
+            "tags": [
+                "Food Type - Soup/Salad/Pasta/Desert/etc. ", 
+                "Occasion - Holiday: Birthday/Christmas/Thanksgiving/etc. ", 
+                "Food Type: beef/whatever"
+            ]
+        }
+    ]
+}
