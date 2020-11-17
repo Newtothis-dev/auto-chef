@@ -1,0 +1,14 @@
+
+
+When setting up your environment (using visual studio code) you should follow the steps: 
+* Install Go 
+* Install Visual Studio code
+* Install the Go Extension 
+* Use the package manager to install all of the go features for the extension (extension doesn't come with all of them) 
+* good to GO 
+
+
+Considerations when making your project: 
+* need to mke a module - "go mod init" at the top level of a project
+    ** need to learn more about the module paradigm and how they work and why. 
+* subdirs are sub-modules in your project

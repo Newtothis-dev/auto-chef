@@ -1,0 +1,140 @@
+{ 
+    "Recipe_Group": [
+        { 
+            "id": "6df52e10-a441-461e-a72b-631afae206fa", 
+            "name": "Fam Tacos" , 
+            "source": "Mom", 
+            "comments": "", 
+            "summary": { 
+                "preptime":0, 
+                "waittime":0, 
+                "cooktime":30, 
+                "servings":10
+            },
+            "instructions": [
+                {
+                    "action": "Put all of the meat in a pan and begin to brown it" 
+                }, 
+                {
+                    "action": "After all of the meat is cooked, turn the stove off and drain the fats. Remember when draining the fats to use an external container rather than pooring them down the sink."
+                }, 
+                {
+                    "action": "Add the seasoning and requisite water to the mix. Mix until uniformly distributed."
+                }, 
+                {
+                    "action": "Turn the stove back on. At this point there are 2 options: 1) bring to a boil and repeately mix until all water is evaporated. 2) bring to a simmer and stir. Option 1 is faster, but will cause a higher risk of burn."
+                }, 
+                {
+                    "action": "When the meat is complete, tacos can be assembled with the remaining cheese/shell"
+                }
+            ],
+            "ingredients": [
+                {
+                    "food": [{
+                        "name":  "Ground Turkey: 99% Fat Free", 
+                        "quantity":2,
+                        "units":"lbs",
+                        "health data" : { 
+                            "carbs":0,
+                            "sugars":0,
+                            "fiber":0,
+                            "fats":1, 
+                            "sat fats":0,
+                            "proteins":28,
+                            "calories":120
+                        },
+                        "qty per serving":0.75
+                    }]
+                },
+                {
+                    "food": [{
+                        "name":  "Ground Turkey: 93% Fat Free", 
+                        "quantity":2,
+                        "units":"lbs",
+                        "health data" : { 
+                            "carbs":0,
+                            "sugars":0,
+                            "fiber":0,
+                            "fats":8, 
+                            "sat fats":2,
+                            "proteins":20,
+                            "calories":0
+                        },
+                        "qty per serving":0.75
+                    }]
+                },
+                {
+                    "food": [
+                        {
+                            "name": "Mission Carb Balance Taco Shells",
+                            "quantity":-1,
+                            "health data" : { 
+                                "carbs":30,
+                                "sugars":0,
+                                "fiber":25,
+                                "fats":6, 
+                                "sat fats":2,
+                                "proteins":9,
+                                "calories":0
+                            },
+                            "qty per serving":1
+                        },
+                        {
+                            "name": "Mission Flour Tortilla Burrito",
+                            "quantity":-1,
+                            "health data" : { 
+                                "carbs":35,
+                                "sugars":2,
+                                "fiber":1,
+                                "fats":4.5, 
+                                "sat fats":1.5,
+                                "proteins":6,
+                                "calories":200
+                            },
+                            "qty per serving":1
+                        }
+                    ]
+                },
+                {
+                    "food": [{
+                        "name": "Old El Pas Taco Seasoning Mix (25% less sodium)",
+                        "quantity":-1,
+                        "health data" : { 
+                            "carbs":3,
+                            "sugars":0,
+                            "fiber":0,
+                            "fats":0, 
+                            "sat fats":0,
+                            "proteins":0,
+                            "calories":15
+                        },
+                        "qty per serving":1.8
+                    }]
+                }, 
+                { 
+                    "food": [{
+                        "name": "Low Fat Cheese (Lucerne)", 
+                        "quantity":-1,
+                        "health data" : { 
+                            "carbs":2,
+                            "sugars":0,
+                            "fiber":0,
+                            "fats":6, 
+                            "sat fats":3.5,
+                            "proteins":7,
+                            "calories":90
+                        },
+                        "qty per serving":1.5
+                    }]
+                }
+            ],
+            "kitchenware": [ 
+                "Large Pan for Cooking"
+            ],
+            "tags": [
+                "mexican",
+                "main"
+            ]
+        }
+    ]
+}
