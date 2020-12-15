@@ -1,5 +1,12 @@
 package model
 
+// TempData random data
+type TempData struct {
+	TmpA int
+	TmpB int
+	TmpC string
+}
+
 // HealthData of a recipe and all it's contents.
 type HealthData struct {
 	Calories int
